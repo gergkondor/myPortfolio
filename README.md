@@ -1,2 +1,1 @@
-# myPortfolio
-Portfolio project
+# Portfolio of Gergo Kondor
