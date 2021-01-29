@@ -29,6 +29,7 @@ main, footer {
 .aboutCont {
     background-image: url("../images/mountain1.1.jpg");
     /* background-position-y: -350px; */
+    margin-top: 0 !important;
 }
 .portCont {
     background-image: url("../images/mountain2.jpg");
@@ -187,6 +188,7 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 75px;
 }
 .emailPhone p {
     width: 100%;
@@ -194,11 +196,11 @@ h5 {
 .getIn {
     color: dimgray;
     letter-spacing: normal;
-    margin: 40px;
+    margin-bottom: 40px;
     font-size: 1.8em;
 }
 form {
-    margin: 50px;
+    margin: 0 75px;
 }
 #submit {
     padding: 10px 40px;
