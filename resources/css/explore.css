@@ -11,6 +11,7 @@ main, footer {
     position: relative;
     top: 80px;
     z-index: 1;
+    
 }
 /*     --------------------------     BACKGROUNDS      -----------------------     */
 
@@ -79,6 +80,12 @@ nav h2 {            /*  <<<<  MY NAME    */
     /* margin-right: -1em; */
     word-spacing: 1em;
 }
+h2 a {
+    text-decoration: none;
+}
+h2 a:hover {
+    color:rgb(150, 150, 150);
+}
 a {
     display: inline-block;
     text-decoration: none;
@@ -89,6 +96,19 @@ a {
     width: 250px;
     display: flex;
     justify-content: space-between;
+}
+
+.linkCont a {
+    display: inline-block;
+    text-decoration: none;
+    color: dimgray;
+    padding: 10px 15px;
+    border-radius: 30px;
+    /* margin: 0 30px; */
+}
+
+.linkCont a:hover {
+    background-color: rgba(200, 200, 200, 0.3);
 }
 /*--------------------------------------------------------------------------------------*/
 /*                              ABOUT                                   */
@@ -133,8 +153,12 @@ h5 {
 }
 #visitSite {
     border-radius: 60px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(230, 230, 230);
     padding: 20px 40px;
+}
+#visitSite:hover {
+    background-color:rgb(211, 211, 211);
+    
 }
 
 /*--------------------------------------------------------------------------------------*/
@@ -157,9 +181,12 @@ form {
     padding: 10px 40px;
     border-radius: 30px;
     border: 0;
-    background-color: lightgray;
+    background-color: rgb(230, 230, 230);
     color: dimgrey;
     font-size: 0.8em;
+}
+#submit:hover {
+    background-color: rgb(211, 211, 211);
 }
 
 /*  ----------------------- FOOTER ----------------------- */
