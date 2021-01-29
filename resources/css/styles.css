@@ -62,6 +62,7 @@ h3 {
     margin: 50px;
     position: relative;
     top: 78px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .exploreButton a:hover {
@@ -110,13 +111,13 @@ h2 a:hover {
     display: inline-block;
     text-decoration: none;
     color: dimgray;
-    padding: 10px 10px;
+    padding: 10px 15px;
     border-radius: 30px;
     /* margin: 0 30px; */
 }
 
 .linkCont a:hover {
-    background-color: rgba(200, 200, 200, 0.3);
+    color:rgb(190, 190, 190);
 }
 
 .linkCont {
@@ -125,6 +126,39 @@ h2 a:hover {
     justify-content: space-between;
 }
 
+/*--------------------DARK  /  LIGHT    button--------------------*/
+
+.toggle button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgba(240, 240, 240, 0.1);
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    float: right;
+    z-index: 1000;
+    border: 0;    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle button:hover {
+    background-color: rgba(240, 240, 240, 0.2);
+}
+.dark {
+    color: black;
+}
+
+.light {
+    color: white;
+}
+
+
+/*                                DARK MODE                               */
+
+.dark-mode {
+    background-color: rgb(25, 25, 25);
+    color: white;
+  }
 
 @media only screen and (min-width: 600px) {
     
