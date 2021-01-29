@@ -1,0 +1,186 @@
+* {
+    /* border: 1px solid black; */
+}
+body {
+    color: dimgray;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+main, footer {
+    position: relative;
+    top: 80px;
+    z-index: 1;
+}
+/*     --------------------------     BACKGROUNDS      -----------------------     */
+
+.aboutCont, .portCont, .contactCont {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutCont {
+    background-image: url("../images/mountain1.jpg");
+}
+.portCont {
+    background-image: url("../images/mountain2.jpg");
+}
+.contactCont {
+    background-image: url("../images/mountain3.jpg");  
+}
+/*-------------------------------------------------------------------------------------------*/
+.titleH4 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+}
+h4 {
+    color: white;
+    font-weight: normal;
+    /* text-transform: uppercase; */
+}
+h4 {
+    font-size: 3em;
+    letter-spacing: 1.5em;
+    /* margin-right: -1.5em; */
+}
+img {
+    width: 500px;
+    height: auto;
+    border: 1px solid lightgray;
+}
+                /*    -------------------  HEADER  ---  NAV BAR   -------------------   */
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    z-index: 50;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: dimgrey;
+    /* margin: 20px; */
+}
+nav h2 {            /*  <<<<  MY NAME    */
+    font-size: 1.8em;
+    font-weight:600;
+    letter-spacing: 1em;
+    /* margin-right: -1em; */
+    word-spacing: 1em;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: dimgray;
+    /* margin: 0 30px; */
+}
+.linkCont {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+/*--------------------------------------------------------------------------------------*/
+/*                              ABOUT                                   */
+
+.aboutText {
+    /* font-size: 1.1em; */
+    margin: 0 auto;
+    width: 70%;
+    color: dimgray;
+    line-height: 2em;
+}
+h6 {
+    font-size: 1.5em;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*                              PORTFOLIO                                   */
+
+.kondor, .vcexp, .teacozy, .runclub {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 60%;
+    margin: 80px auto;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    /* border-top: 1px solid lightgray; */
+    border-bottom: 1px solid lightgray;
+}
+.aboutCont, .portCont, .contactCont {
+    margin: 100px 0;
+}
+h5 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: dimgray;
+    letter-spacing: 0.5em;
+    /* margin-right: -0.5em; */
+    word-spacing: 0.5em;
+}
+#visitSite {
+    border-radius: 60px;
+    background-color: rgb(211, 211, 211);
+    padding: 20px 40px;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*                              CONTACT                                   */
+
+.contactText {
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    /* margin-right: -0.3em; */
+    word-spacing: 0.8em;
+    margin: 150px;
+}
+.contactText p {
+    margin: 30px;
+}
+form {
+    margin: 100px;
+}
+#submit {
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 0;
+    background-color: lightgray;
+    color: dimgrey;
+    font-size: 0.8em;
+}
+
+/*  ----------------------- FOOTER ----------------------- */
+
+footer {
+    border-top: 1px solid lightgray;
+}
+footer nav {
+    padding: 20px;
+}
+footer a {
+    margin: 0 30px;
+}
+.copyR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+} 
+
+
+@media only screen and (min-width: 600px) {
+    
+}
