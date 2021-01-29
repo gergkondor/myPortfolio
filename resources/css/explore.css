@@ -169,17 +169,36 @@ h5 {
 /*                              CONTACT                                   */
 
 .contactText {
-    font-size: 1.5em;
+    font-size: 1.2em;
     letter-spacing: 0.3em;
     /* margin-right: -0.3em; */
     word-spacing: 0.8em;
-    margin: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .contactText p {
-    margin: 30px;
+    /* margin: 30px; */
+}
+
+.emailPhone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.emailPhone p {
+    width: 100%;
+}
+.getIn {
+    color: dimgray;
+    letter-spacing: normal;
+    margin: 40px;
+    font-size: 1.8em;
 }
 form {
-    margin: 100px;
+    margin: 50px;
 }
 #submit {
     padding: 10px 40px;
