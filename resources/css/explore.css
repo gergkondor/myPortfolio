@@ -217,7 +217,8 @@ form {
 
 /*-------------------- DARK  /   LIGHT     button--------------------*/
 
-.toggle button {
+.toggle p {
+    color: grey;
     padding: 10px 30px;
     border-radius: 30px;
     background-color: rgba(190, 190, 190, 0.8);
@@ -227,10 +228,11 @@ form {
     float: right;
     z-index: 1000;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    border: 0;    
+    border: 0;
+    cursor: pointer;    
 }
 
-.toggle button:hover {
+.toggle p:hover {
     background-color: rgba(220, 220, 220, 0.8);
 }
 .dark {
