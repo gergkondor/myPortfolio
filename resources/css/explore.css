@@ -106,7 +106,6 @@ h4 {            /*  about, portfolio, contact  titles  */
 }
 .aboutCont {
     background-image: url("../images/mountain1.1LOW.jpg");
-    /* background-position-y: -350px; */
     margin-top: 0 !important;
     padding-top: 90px;
 }
