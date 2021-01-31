@@ -1,0 +1,171 @@
+* {
+    /* border: 1px solid black; */
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    color: dimgray;
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    display: grid;
+    grid-template: auto 1fr / 100%;
+}
+
+/*         ----------------          HEADER          -------------------          */
+
+a {
+    color: dimgray;
+    text-decoration: none;
+}
+.myName {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.myName:hover {
+    color: rgb(146, 146, 146);
+}
+.myName, .linkCont {
+    margin: 40px 0;
+}
+header {
+    background-color: white;
+    border-bottom: lightgray;
+}
+.linkCont {
+    letter-spacing: 3px;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*         ----------------          MAIN          -------------------          */
+
+main {
+    background-image: url("../images/codeLOW.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.fullGrid {
+    width: 100%;
+    display: grid;
+    grid-template: auto auto / 1fr;
+    align-self: center;
+}
+/* .fullCont {
+    display: grid;
+    grid-template: auto auto / 1fr;
+    align-self: center;
+} */
+.fullCont, h1, h3 {
+    width: 100%;;
+}
+.fullText {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 10px;
+    line-height: 2.5em;
+}
+h1 {
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+}
+h3 {
+    font-size: 1.5em;
+    padding-top: 35px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.exploreButton a {
+    color: lightgrey;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px 40px;
+    position: relative;
+    top: 45px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+.exploreButton a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.linkCont a:hover {
+    color: rgb(192, 190, 190);
+}
+/* .toggle img {
+    width: 30px;
+    height: auto;
+    color: grey;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: rgba(190, 190, 190, 0.4);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    border: 0;
+    cursor: pointer;    
+}
+.toggle img:hover {
+    background-color: rgba(220, 220, 220, 0.5);
+} */
+
+/*                                DARK MODE                               */
+
+.dark-mode {
+    background-color: rgb(25, 25, 25);
+    color: white;
+  }
+/*        --------------------     BIG SCREEN (at least 1000px)    ----------------------        */
+
+@media only screen and (min-width: 1000px) {
+    nav {
+        display: grid;
+        grid-template: 1fr / 5fr 2fr 3fr;
+        align-content: center;
+    }
+    .myName {
+        font-size: 2.5em;
+        font-weight: 600;
+        letter-spacing: 15px;
+        word-spacing: 20px;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+        /* padding-left: 100px; */
+    }
+    .linkCont {
+        align-self: center;
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    h1 {
+        font-size: 3.5em;
+        letter-spacing: 5px;
+        word-spacing: 20px;
+    }
+    h3 {
+        font-size: 2em;
+        letter-spacing: 3px;
+        word-spacing: 10px;
+    }
+        /* -------- HIGH-RES BACKGROUND -------- */
+
+    main {
+        background-image: url("../images/code.jpg");
+    }
+
+}

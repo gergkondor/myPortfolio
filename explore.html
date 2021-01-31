@@ -6,43 +6,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="resources/css/normalize.css"> -->
-    <link rel="stylesheet" href="resources/css/modernReset.css">
+    <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/explore.css">
-    <title>Gergo Kondor Portfolio</title>
+
+    <!--            GET IN TOUCH           -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--    --------------------------------        -->
+
+    <title>GK</title>
 </head>
 <body>
-    <header>
-                                    <!--   ----------     NAV     ------------     -->
-        <nav class="nav">
-            <h2><a href="index.html">Gergo Kondor</a></h2>
+    <header>        <!--   -----------     NAV     ---------------     -->
+        <nav>
+            <a class="myName" href="index.html">Gergo Kondo<span class="lastLetter">r</span></a>
             <div class="linkCont">
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="explore.html#about">Abou<span class="lastLetter">t</span></a>
+                <a href="explore.html#portfolio">Portfoli<span class="lastLetter">o</span></a>
+                <a href="explore.html#contact">Contac<span class="lastLetter">t</span></a>
             </div>
         </nav>
     </header>
     
     <main>
-        
+
+        <!--   ------     DARK / LIGHT button    ------    -->
+
         <div class="toggle">
-            <p onclick="darkLight()"><span class="dark">Dark</span> / <span class="light">Light</span></p>
+            <img onclick="darkLight()" src="resources/images/dayNight.png" alt="dayNight">
         </div>
+
+        <!--      -------          ABOUT            ------          -->
 
         <div class="aboutCont" id="about">
             <div class="titleH4">
-                <h4>About</h4>
+                <h4>Abou<span class="lastLetter">t</span></h4>
             </div>
         </div>
 
         <div class="aboutText">
             <h6>Hi, I'm Gergo. </h6>
-            <p>During the day I’m the lead developer at a local agency. During the evenings I spend my time working on freelance projects and building my own products. <br>Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+            <p>
+               I am a full stack developer. I chose this profession because I like to create things from scratch and it keeps my mind sharp as it always brings new challenges and learning opportunities.
+               <br>
+               Outside of work my hobbies are woodworking and rock-climbing where I can also express my creative nature in different ways.
+               In woodworking I design and build unique guitars and small furnitures and climbing requires intense focus, strength, problem solving and determination, and it's also fun.
+               
+               <h3>Languages I speak:</h3>
+               HTML - CSS - JavaScript
+                             
+               <h3>Dev Tools:</h3>
+               VSCode - GitHub - GitBash                   
+            </p>
         </div>
+
+        <!--      -------          PORTFOLIO            ------          -->
 
         <div class="portCont" id="portfolio">
             <div class="titleH4">
-                <h4>Portfolio</h4>
+                <h4>Portfoli<span class="lastLetter">o</span></h4>
             </div>
         </div>
 
@@ -80,48 +101,53 @@
             </div>
         </div>
 
+        <!--      -------          CONTACT            ------          -->
+
         <div class="contactCont" id="contact">
             <div class="titleH4">
-                <h4>Contact</h4>
+                <h4>Contac<span class="lastLetter">t</span></h4>
             </div>
         </div>
 
         <div class="contactText">
             <div class="emailPhone">
-                <p>Email:<br><br>kondor.gerg@gmail.com</p><br><br>
-                <p>Phone:<br><br>07455249865</p>
+                <p>Email:<br><br>kondor.ger@gmail.com</p><br>
+                <p>Phone:<br><br>+447123456789</p>
             </div>
             
-        <!-- <div class="form"> -->
+            <!--      -------          FORM            ------          -->
 
-                <form action="action_page.php">
-                    <h4 class="getIn">Get in touch</h4>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email"><br><br>
-                    <textarea name="text" id="text" rows="6" cols="50"></textarea><br>
-                    <input id="submit" type="submit" value="Send" >
-                </form>
-        <!-- </div> -->
-    </div>
+            <form method="post" action="getintouch.php">
+
+                <h4 class="getIn">Get in touch</h4>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="6" cols="50"></textarea><br>
+
+                <input id="submit" name="submit" type="submit" value="Send" >
+            </form>
+            <!-- </div> -->
+        </div>
 
     </main>
+        <!--      -------          FOOTER            ------          -->
 
     <footer>
-        
-
         <div class="copyR">
-            <p>&copy; 2021 Gergo Kondor. All rights reserved.</p>
             <nav>
-                <a href="#linkedin">LinkedIn</a>
-                <a href="#github">GitHub</a>
-                <a href="#facebook">Facebook</a>
+                <a href="https://www.linkedin.com/in/gerg%C5%91-kondor-8346461b0/" target="blank">LinkedIn</a>
+                <a href="https://github.com/gergkondor" target="blank">GitHub</a>
             </nav>
-            <p>Authored by Gergo Kondor</p>
         </div>
-        <!--            QUOTE             -->
     </footer>
+
+        <!--      -------          JS            ------          -->
 
     <script src="script.js"></script>
 

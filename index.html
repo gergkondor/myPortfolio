@@ -6,15 +6,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="resources/css/normalize.css"> -->
-    <link rel="stylesheet" href="resources/css/modernReset.css">
-    <link rel="stylesheet" href="resources/css/styles.css">
+    <!-- <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="resources/css/mobileStyles480.css"/> -->
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/index.css">
     <title>Gergo Kondor Portfolio</title>
 </head>
 <body>
-    <header>
-                        <!--   ----------     NAV     ------------     -->
-        <nav class="nav">
-            <h2><a href="index.html">Gergo Kondor</a></h2>
+    <header>        <!--   -----------     NAV     ---------------     -->
+        <nav>
+            <a class="myName" href="index.html">Gergo Kondor</a>
             <div class="linkCont">
                 <a href="explore.html#about">About</a>
                 <a href="explore.html#portfolio">Portfolio</a>
@@ -24,27 +24,26 @@
     </header>
     
     <main>
+                <!--        DARK / LIGHT button        -->
+        <!-- <div class="toggle">
+            <img onclick="darkLight()" src="resources/images/dayNight.png" alt="dayNight">
+        </div> -->
+                <!-- -->
+        <div class="fullGrid">
 
-        <div class="toggle">
-            <p onclick="darkLight()"><span class="dark">Dark</span> / <span class="light">Light</span></p>
-        </div>
-
-        <div class="fullCont">
-
-            <div class="fullText">
-                <h1>Full Stack Developer</h1>
-                <h3>A web designer and developer from Derby in the UK.</h3>
+            <div class="fullCont">
+                <div class="fullText">
+                    <h1>Full Stack Developer</h1>
+                    <h3>A web and software developer from Derby in the UK.</h3>
+                </div>
             </div>
-        
+
+
             <div class="exploreButton">
                 <a href="explore.html">Explore</a>
             </div>
-
-            
         </div>
-
-        
-        
+            
     </main>
 
     <script src="script.js"></script>
