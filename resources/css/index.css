@@ -10,6 +10,7 @@ body {
     background-color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
     margin: 0 auto;
     display: grid;
     grid-template: auto 1fr / 100%;
@@ -48,7 +49,7 @@ header {
 /*         ----------------          MAIN          -------------------          */
 
 main {
-    background-image: url("../images/codeLOW.jpg");
+    background-image: url("../images/Weblap\ kezdőkép\ v8.2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -77,6 +78,8 @@ main {
     justify-content: center;
     padding: 35px 10px;
     line-height: 2.5em;
+    position: relative;
+    top: 8px;
 }
 h1 {
     font-size: 2.5em;
@@ -162,10 +165,26 @@ h3 {
         letter-spacing: 3px;
         word-spacing: 10px;
     }
+        /*  TEXT AND BUTTON INVISIBLE   */
+    /* .fullCont, .exploreButton {
+        display: none;
+
+        
+    }
+    header {
+        height: 0px;
+    } */
+
+    .exploreButton a {
+        top: 60px;
+    }
+
         /* -------- HIGH-RES BACKGROUND -------- */
 
     main {
-        background-image: url("../images/code.jpg");
+        /* background-image: url("../images/code6.jpg"); */
+        /* background: rgb(43,54,72); */
+        background: linear-gradient(20deg, rgba(43,54,72,1) 0%, rgba(63,98,140,1) 60%, rgb(153, 177, 206) 100%);
     }
 
 }
