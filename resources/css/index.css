@@ -181,10 +181,10 @@ h3 {
 
         /* -------- HIGH-RES BACKGROUND -------- */
 
-    main {
+    /* main { */
         /* background-image: url("../images/code6.jpg"); */
         /* background: rgb(43,54,72); */
-        background: linear-gradient(20deg, rgba(43,54,72,1) 0%, rgba(63,98,140,1) 60%, rgb(153, 177, 206) 100%);
-    }
+        /* background: linear-gradient(20deg, rgba(43,54,72,1) 0%, rgba(63,98,140,1) 60%, rgb(153, 177, 206) 100%); */
+    /* } */
 
 }
